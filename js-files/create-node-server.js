@@ -3,7 +3,7 @@ const http = require('http');
 function rqListener(req, res) {
   console.log('Hello Word');
   console.log('request made');
-  process.exit();
+  //process.exit();
 }
 
 const server = http.createServer(rqListener);
