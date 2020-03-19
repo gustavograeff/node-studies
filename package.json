@@ -4,7 +4,9 @@
   "description": "This respository was created for my Node.js studies.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -19,7 +21,7 @@
   "homepage": "https://github.com/ggraeff98/node-studies#readme",
   "devDependencies": {
     "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-airbnb-base": "^14.1.0",
     "eslint-config-node": "^4.0.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-import": "^2.20.1",

@@ -1,11 +1,18 @@
 {
   "env": {
     "browser": true,
-    "jest": true
+    "jest": true,
+    "es6": true,
+    "node": true
   },
-  "extends": ["standard"],
+  "extends": ["airbnb-base", "prettier"],
+  "plugins": ["prettier"],
   "rules": {
     "prettier/prettier": "error",
-    "no-unused-expressions": "error"
+    "no-unused-expressions": "error",
+    "no-console": "off",
+    "prefer-destructuring": "warn",
+    "consistent-return": "warn",
+    "max-len": ["warn", { "code": 80 }]
   }
 }

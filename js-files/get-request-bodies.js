@@ -1,8 +1,8 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-  const url = req.url;
-  const method = req.method;
+  const { url } = req;
+  const { method } = req;
 
   if (url === '/') {
     res.write('<html>');
@@ -42,6 +42,7 @@ const server = http.createServer((req, res) => {
     res.setHeader('Location', '/');
     return res.end();
   }
+  return res.end();
 });
 
 server.listen(3000);
