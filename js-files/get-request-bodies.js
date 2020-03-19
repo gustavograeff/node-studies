@@ -1,4 +1,3 @@
-
 const http = require('http');
 
 const server = http.createServer((req, res) => {
@@ -27,7 +26,7 @@ const server = http.createServer((req, res) => {
   if (url === '/message' && method === 'POST') {
     const body = [];
 
-    req.on('data', (chunck) => {
+    req.on('data', chunck => {
       console.log('chunck', chunck);
       body.push(chunck);
     });
@@ -38,7 +37,7 @@ const server = http.createServer((req, res) => {
       console.log('parsedBody', parsedBody);
       console.log('message', message);
     });
-    
+
     res.statusCode = 302;
     res.setHeader('Location', '/');
     return res.end();

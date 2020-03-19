@@ -1,0 +1,11 @@
+{
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "extends": ["standard"],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-unused-expressions": "error"
+  }
+}
