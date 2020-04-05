@@ -1,4 +1,5 @@
 const http = require('http');
+const fs = require('fs');
 
 const server = http.createServer((req, res) => {
   const { url } = req;
@@ -36,8 +37,8 @@ const server = http.createServer((req, res) => {
       const message = parsedBody.split('=')[1];
       console.log('parsedBody', parsedBody);
       console.log('message', message);
+      fs.writeFileSync('message.txt', message);
     });
-
     res.statusCode = 302;
     res.setHeader('Location', '/');
     return res.end();
