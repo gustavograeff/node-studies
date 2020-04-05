@@ -13,6 +13,7 @@
     "no-console": "off",
     "prefer-destructuring": "warn",
     "consistent-return": "warn",
-    "max-len": ["warn", { "code": 80 }]
+    "max-len": ["warn", { "code": 150 }],
+    "no-unused-vars": "off"
   }
 }
