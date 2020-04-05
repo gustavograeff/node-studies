@@ -9,7 +9,10 @@
       "request": "launch",
       "name": "Launch Program",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/classes-35-39/understanding-event-drive.js"
+      "program": "${workspaceFolder}/classes-35-39/understanding-event-drive.js",
+      "restart": true,
+      "runtimeExecutable": "nodemon",
+      "console": "integratedTerminal"
     }
   ]
 }
